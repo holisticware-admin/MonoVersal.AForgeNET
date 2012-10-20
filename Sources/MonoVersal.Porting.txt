@@ -1,0 +1,55 @@
+HowTos
+	partialization
+		public class				public partial class
+		private class				private partial class
+		internal class				internal partial class
+		public abstract class		public abstract partial class
+		private abstract class		private abstract partial class
+		internal abstract class		internal abstract partial class
+
+	Create projects
+		Windows Phone WP
+			chosen as source project (ProjectLinker terminology)
+
+			reason
+				smallest subset (common denominator)
+				probe for port (to analyze errors and potential problems)
+					Serializable
+					ICloneable
+					System.Drawing
+					SerialPort
+
+			destination project
+				edit
+					add \.WP.cs;
+
+			moved Class.Serializable.cs
+				[Serializable]	to .Serializable.cs
+				ICloneable		to .Serializable.cs
+		
+			moved .Serializable.cs files to Desktop
+
+		Mono for Android MA
+
+		MonoTouch MT
+			smb share
+			tools	Visual Studio Mono Project Flave
+
+WP
+	Ported
+		Core
+		Fuzzy
+		Genetic
+		MachineLearning
+		Math
+		Neuro
+
+	Port delayed (mostly because of pInvoke)
+		Imaging			reason = unsafe/native/pInvoke
+		Video			reason = unsafe/native/pInvoke
+		Vision			reason = unsafe/native/pInvoke
+
+		Lego			reason = SerialPort
+		Robotics		reason = depending on Video
+
+		in unsafe projects (like Video*) fully qualified classes to ease future ports

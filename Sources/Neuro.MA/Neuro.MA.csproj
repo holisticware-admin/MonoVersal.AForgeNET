@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D33D6117-01C6-413E-878E-7F7A2D4156AC}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Neuro.MA</RootNamespace>
+    <AssemblyName>Neuro.MA</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Neuro.WP\Activation Functions\BipolarSigmoidFunction.cs">
+      <Link>Activation Functions\BipolarSigmoidFunction.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Activation Functions\IActivationFunction.cs">
+      <Link>Activation Functions\IActivationFunction.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Activation Functions\SigmoidFunction.cs">
+      <Link>Activation Functions\SigmoidFunction.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Activation Functions\ThresholdFunction.cs">
+      <Link>Activation Functions\ThresholdFunction.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Layers\ActivationLayer.cs">
+      <Link>Layers\ActivationLayer.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Layers\DistanceLayer.cs">
+      <Link>Layers\DistanceLayer.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Layers\Layer.cs">
+      <Link>Layers\Layer.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Learning\BackPropagationLearning.cs">
+      <Link>Learning\BackPropagationLearning.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Learning\DeltaRuleLearning.cs">
+      <Link>Learning\DeltaRuleLearning.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Learning\ElasticNetworkLearning.cs">
+      <Link>Learning\ElasticNetworkLearning.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Learning\EvolutionaryFitness.cs">
+      <Link>Learning\EvolutionaryFitness.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Learning\EvolutionaryLearning.cs">
+      <Link>Learning\EvolutionaryLearning.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Learning\ISupervisedLearning.cs">
+      <Link>Learning\ISupervisedLearning.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Learning\IUnsupervisedLearning.cs">
+      <Link>Learning\IUnsupervisedLearning.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Learning\PerceptronLearning.cs">
+      <Link>Learning\PerceptronLearning.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Learning\ResilientBackPropagationLearning.cs">
+      <Link>Learning\ResilientBackPropagationLearning.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Learning\SOMLearning.cs">
+      <Link>Learning\SOMLearning.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Networks\ActivationNetwork.cs">
+      <Link>Networks\ActivationNetwork.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Networks\DistanceNetwork.cs">
+      <Link>Networks\DistanceNetwork.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Networks\Network.cs">
+      <Link>Networks\Network.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Networks\Network.Serializable.WP.cs">
+      <Link>Networks\Network.Serializable.WP.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Neurons\ActivationNeuron.cs">
+      <Link>Neurons\ActivationNeuron.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Neurons\DistanceNeuron.cs">
+      <Link>Neurons\DistanceNeuron.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Neurons\Neuron.cs">
+      <Link>Neurons\Neuron.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core.MA\Core.MA.csproj">
+      <Project>{B95C8E67-F25F-4C54-A00F-83FA015B7BFF}</Project>
+      <Name>Core.MA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Genetic.MA\Genetic.MA.csproj">
+      <Project>{61C6D89E-D398-4228-BE6C-BD0E31DCC6E0}</Project>
+      <Name>Genetic.MA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Math.MA\Math.MA.csproj">
+      <Project>{8BF317F5-EC3C-4953-8EA1-76464088B5D5}</Project>
+      <Name>Math.MA</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" ProjectLinkReference="ed9a594f-96d3-4374-9499-211ff7809ebe" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

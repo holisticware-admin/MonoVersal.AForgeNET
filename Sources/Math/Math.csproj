@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C0FAF524-72E4-46F7-8C1B-A6B74DEC5EBE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AForge.Math</RootNamespace>
+    <AssemblyName>AForge.Math</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>AForge.Math.snk</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>..\..\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>AForge.Math.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>..\..\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>AForge.Math.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="AForge">
+      <HintPath>..\..\Release\AForge.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Math.WP\Complex.cs">
+      <Link>Complex.cs</Link>
+    </Compile>
+    <Compile Include="..\Math.WP\ContinuousHistogram.cs">
+      <Link>ContinuousHistogram.cs</Link>
+    </Compile>
+    <Compile Include="..\Math.WP\FourierTransform.cs">
+      <Link>FourierTransform.cs</Link>
+    </Compile>
+    <Compile Include="..\Math.WP\Gaussian.cs">
+      <Link>Gaussian.cs</Link>
+    </Compile>
+    <Compile Include="..\Math.WP\Geometry\ClosePointsMergingOptimizer.cs">
+      <Link>Geometry\ClosePointsMergingOptimizer.cs</Link>
+    </Compile>
+    <Compile Include="..\Math.WP\Geometry\CoplanarPosit.cs">
+      <Link>Geometry\CoplanarPosit.cs</Link>
+    </Compile>
+    <Compile Include="..\Math.WP\Geometry\FlatAnglesOptimizer.cs">
+      <Link>Geometry\FlatAnglesOptimizer.cs</Link>
+    </Compile>
+    <Compile Include="..\Math.WP\Geometry\GeometryTools.cs">
+      <Link>Geometry\GeometryTools.cs</Link>
+    </Compile>
+    <Compile Include="..\Math.WP\Geometry\GrahamConvexHull.cs">
+      <Link>Geometry\GrahamConvexHull.cs</Link>
+    </Compile>
+    <Compile Include="..\Math.WP\Geometry\IConvexHullAlgorithm.cs">
+      <Link>Geometry\IConvexHullAlgorithm.cs</Link>
+    </Compile>
+    <Compile Include="..\Math.WP\Geometry\IShapeOptimizer.cs">
+      <Link>Geometry\IShapeOptimizer.cs</Link>
+    </Compile>
+    <Compile Include="..\Math.WP\Geometry\Line.cs">
+      <Link>Geometry\Line.cs</Link>
+    </Compile>
+    <Compile Include="..\Math.WP\Geometry\LineSegment.cs">
+      <Link>Geometry\LineSegment.cs</Link>
+    </Compile>
+    <Compile Include="..\Math.WP\Geometry\LineStraighteningOptimizer.cs">
+      <Link>Geometry\LineStraighteningOptimizer.cs</Link>
+    </Compile>
+    <Compile Include="..\Math.WP\Geometry\PointsCloud.cs">
+      <Link>Geometry\PointsCloud.cs</Link>
+    </Compile>
+    <Compile Include="..\Math.WP\Geometry\POSIT.cs">
+      <Link>Geometry\POSIT.cs</Link>
+    </Compile>
+    <Compile Include="..\Math.WP\Geometry\ShapeType.cs">
+      <Link>Geometry\ShapeType.cs</Link>
+    </Compile>
+    <Compile Include="..\Math.WP\Geometry\SimpleShapeChecker.cs">
+      <Link>Geometry\SimpleShapeChecker.cs</Link>
+    </Compile>
+    <Compile Include="..\Math.WP\Histogram.cs">
+      <Link>Histogram.cs</Link>
+    </Compile>
+    <Compile Include="..\Math.WP\Matrix3x3.cs">
+      <Link>Matrix3x3.cs</Link>
+    </Compile>
+    <Compile Include="..\Math.WP\Matrix4x4.cs">
+      <Link>Matrix4x4.cs</Link>
+    </Compile>
+    <Compile Include="..\Math.WP\Metrics\CosineDistance.cs">
+      <Link>Metrics\CosineDistance.cs</Link>
+    </Compile>
+    <Compile Include="..\Math.WP\Metrics\CosineSimilarity.cs">
+      <Link>Metrics\CosineSimilarity.cs</Link>
+    </Compile>
+    <Compile Include="..\Math.WP\Metrics\EuclideanDistance.cs">
+      <Link>Metrics\EuclideanDistance.cs</Link>
+    </Compile>
+    <Compile Include="..\Math.WP\Metrics\EuclideanSimilarity.cs">
+      <Link>Metrics\EuclideanSimilarity.cs</Link>
+    </Compile>
+    <Compile Include="..\Math.WP\Metrics\HammingDistance.cs">
+      <Link>Metrics\HammingDistance.cs</Link>
+    </Compile>
+    <Compile Include="..\Math.WP\Metrics\IDistance.cs">
+      <Link>Metrics\IDistance.cs</Link>
+    </Compile>
+    <Compile Include="..\Math.WP\Metrics\ISimilarity.cs">
+      <Link>Metrics\ISimilarity.cs</Link>
+    </Compile>
+    <Compile Include="..\Math.WP\Metrics\JaccardDistance.cs">
+      <Link>Metrics\JaccardDistance.cs</Link>
+    </Compile>
+    <Compile Include="..\Math.WP\Metrics\ManhattanDistance.cs">
+      <Link>Metrics\ManhattanDistance.cs</Link>
+    </Compile>
+    <Compile Include="..\Math.WP\Metrics\PearsonCorrelation.cs">
+      <Link>Metrics\PearsonCorrelation.cs</Link>
+    </Compile>
+    <Compile Include="..\Math.WP\PerlinNoise.cs">
+      <Link>PerlinNoise.cs</Link>
+    </Compile>
+    <Compile Include="..\Math.WP\Random\ExponentialGenerator.cs">
+      <Link>Random\ExponentialGenerator.cs</Link>
+    </Compile>
+    <Compile Include="..\Math.WP\Random\GaussianGenerator.cs">
+      <Link>Random\GaussianGenerator.cs</Link>
+    </Compile>
+    <Compile Include="..\Math.WP\Random\IRandomNumberGenerator.cs">
+      <Link>Random\IRandomNumberGenerator.cs</Link>
+    </Compile>
+    <Compile Include="..\Math.WP\Random\StandardGenerator.cs">
+      <Link>Random\StandardGenerator.cs</Link>
+    </Compile>
+    <Compile Include="..\Math.WP\Random\UniformGenerator.cs">
+      <Link>Random\UniformGenerator.cs</Link>
+    </Compile>
+    <Compile Include="..\Math.WP\Random\UniformOneGenerator.cs">
+      <Link>Random\UniformOneGenerator.cs</Link>
+    </Compile>
+    <Compile Include="..\Math.WP\Statistics.cs">
+      <Link>Statistics.cs</Link>
+    </Compile>
+    <Compile Include="..\Math.WP\SVD.cs">
+      <Link>SVD.cs</Link>
+    </Compile>
+    <Compile Include="..\Math.WP\Tools.cs">
+      <Link>Tools.cs</Link>
+    </Compile>
+    <Compile Include="..\Math.WP\Vector3.cs">
+      <Link>Vector3.cs</Link>
+    </Compile>
+    <Compile Include="..\Math.WP\Vector4.cs">
+      <Link>Vector4.cs</Link>
+    </Compile>
+    <Compile Include="Complex.ICloneable.Serializable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ContinuousHistogram.Serializable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Geometry\Line.Exception.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Histogram.Serializable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SVD.Exception.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AForge.Math.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties ProjectLinkReference="0ff24f6d-fb93-47e1-843e-a152c61071f6" ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.WP.cs;\.xaml;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

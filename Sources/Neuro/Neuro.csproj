@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{02B5E453-2085-4E41-86D9-C8E8A03FB1B9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AForge.Neuro</RootNamespace>
+    <AssemblyName>AForge.Neuro</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>AForge.Neuro.snk</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>AForge.Neuro.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>AForge.Neuro.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Neuro.WP\Activation Functions\BipolarSigmoidFunction.cs">
+      <Link>Activation Functions\BipolarSigmoidFunction.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Activation Functions\IActivationFunction.cs">
+      <Link>Activation Functions\IActivationFunction.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Activation Functions\SigmoidFunction.cs">
+      <Link>Activation Functions\SigmoidFunction.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Activation Functions\ThresholdFunction.cs">
+      <Link>Activation Functions\ThresholdFunction.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Layers\ActivationLayer.cs">
+      <Link>Layers\ActivationLayer.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Layers\DistanceLayer.cs">
+      <Link>Layers\DistanceLayer.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Layers\Layer.cs">
+      <Link>Layers\Layer.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Learning\BackPropagationLearning.cs">
+      <Link>Learning\BackPropagationLearning.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Learning\DeltaRuleLearning.cs">
+      <Link>Learning\DeltaRuleLearning.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Learning\ElasticNetworkLearning.cs">
+      <Link>Learning\ElasticNetworkLearning.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Learning\EvolutionaryFitness.cs">
+      <Link>Learning\EvolutionaryFitness.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Learning\EvolutionaryLearning.cs">
+      <Link>Learning\EvolutionaryLearning.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Learning\ISupervisedLearning.cs">
+      <Link>Learning\ISupervisedLearning.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Learning\IUnsupervisedLearning.cs">
+      <Link>Learning\IUnsupervisedLearning.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Learning\PerceptronLearning.cs">
+      <Link>Learning\PerceptronLearning.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Learning\ResilientBackPropagationLearning.cs">
+      <Link>Learning\ResilientBackPropagationLearning.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Learning\SOMLearning.cs">
+      <Link>Learning\SOMLearning.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Networks\ActivationNetwork.cs">
+      <Link>Networks\ActivationNetwork.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Networks\DistanceNetwork.cs">
+      <Link>Networks\DistanceNetwork.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Networks\Network.cs">
+      <Link>Networks\Network.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Neurons\ActivationNeuron.cs">
+      <Link>Neurons\ActivationNeuron.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Neurons\DistanceNeuron.cs">
+      <Link>Neurons\DistanceNeuron.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Neurons\Neuron.cs">
+      <Link>Neurons\Neuron.cs</Link>
+    </Compile>
+    <Compile Include="Activation Functions\BipolarSigmoidFunction.Serializable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Activation Functions\SigmoidFunction.Serializable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Activation Functions\ThresholdFunction.Serializable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Layers\ActivationLayer.Serializable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Layers\DistanceLayer.Serializable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Layers\Layer.Serializable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networks\ActivationNetwork.Serializable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networks\DistanceNetwork.Serializable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networks\Network.Serializable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Neurons\ActivationNeuron.Serializable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Neurons\DistanceNeuron.Serializable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Neurons\Neuron.Serializable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AForge.Neuro.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Core.csproj">
+      <Project>{631AC093-430F-45F4-BA0C-AF0F0405918A}</Project>
+      <Name>Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Genetic\Genetic.csproj">
+      <Project>{2EFAA327-1789-4438-B9F5-E83ACAE12DB2}</Project>
+      <Name>Genetic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Math\Math.csproj">
+      <Project>{C0FAF524-72E4-46F7-8C1B-A6B74DEC5EBE}</Project>
+      <Name>Math</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties ProjectLinkReference="ed9a594f-96d3-4374-9499-211ff7809ebe" ProjectLinkerExcludeFilter="\.WP.cs;\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{61443143-5AB2-4D4A-B46D-C00214302EE2}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Neuro.MT</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>Neuro.MT</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Neuro.WP\Activation Functions\BipolarSigmoidFunction.cs">
+      <Link>Activation Functions\BipolarSigmoidFunction.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Activation Functions\IActivationFunction.cs">
+      <Link>Activation Functions\IActivationFunction.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Activation Functions\SigmoidFunction.cs">
+      <Link>Activation Functions\SigmoidFunction.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Activation Functions\ThresholdFunction.cs">
+      <Link>Activation Functions\ThresholdFunction.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Layers\ActivationLayer.cs">
+      <Link>Layers\ActivationLayer.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Layers\DistanceLayer.cs">
+      <Link>Layers\DistanceLayer.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Layers\Layer.cs">
+      <Link>Layers\Layer.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Learning\BackPropagationLearning.cs">
+      <Link>Learning\BackPropagationLearning.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Learning\DeltaRuleLearning.cs">
+      <Link>Learning\DeltaRuleLearning.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Learning\ElasticNetworkLearning.cs">
+      <Link>Learning\ElasticNetworkLearning.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Learning\EvolutionaryFitness.cs">
+      <Link>Learning\EvolutionaryFitness.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Learning\EvolutionaryLearning.cs">
+      <Link>Learning\EvolutionaryLearning.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Learning\ISupervisedLearning.cs">
+      <Link>Learning\ISupervisedLearning.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Learning\IUnsupervisedLearning.cs">
+      <Link>Learning\IUnsupervisedLearning.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Learning\PerceptronLearning.cs">
+      <Link>Learning\PerceptronLearning.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Learning\ResilientBackPropagationLearning.cs">
+      <Link>Learning\ResilientBackPropagationLearning.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Learning\SOMLearning.cs">
+      <Link>Learning\SOMLearning.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Networks\ActivationNetwork.cs">
+      <Link>Networks\ActivationNetwork.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Networks\DistanceNetwork.cs">
+      <Link>Networks\DistanceNetwork.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Networks\Network.cs">
+      <Link>Networks\Network.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Networks\Network.Serializable.WP.cs">
+      <Link>Networks\Network.Serializable.WP.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Neurons\ActivationNeuron.cs">
+      <Link>Neurons\ActivationNeuron.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Neurons\DistanceNeuron.cs">
+      <Link>Neurons\DistanceNeuron.cs</Link>
+    </Compile>
+    <Compile Include="..\Neuro.WP\Neurons\Neuron.cs">
+      <Link>Neurons\Neuron.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core.MT\Core.MT.csproj">
+      <Project>{239661E8-9870-49C9-9925-45222D1B4E0C}</Project>
+      <Name>Core.MT</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Genetic.MT\Genetic.MT.csproj">
+      <Project>{AB8BFF98-3514-4F62-BEBE-35CB6855A5FE}</Project>
+      <Name>Genetic.MT</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Math.MT\Math.MT.csproj">
+      <Project>{D57AEB53-6018-4618-A8EC-1A8C2B52A66D}</Project>
+      <Name>Math.MT</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties ProjectLinkReference="ed9a594f-96d3-4374-9499-211ff7809ebe" ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

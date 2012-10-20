@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{04F8E53B-118A-4676-A3F9-C417AC907620}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>AForge.Fuzzy</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>AForge.Fuzzy</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Fuzzy.WP\Clause.cs">
+      <Link>Clause.cs</Link>
+    </Compile>
+    <Compile Include="..\Fuzzy.WP\Database.cs">
+      <Link>Database.cs</Link>
+    </Compile>
+    <Compile Include="..\Fuzzy.WP\Defuzzification\CentroidDefuzzifier.cs">
+      <Link>Defuzzification\CentroidDefuzzifier.cs</Link>
+    </Compile>
+    <Compile Include="..\Fuzzy.WP\Defuzzification\IDefuzzifier.cs">
+      <Link>Defuzzification\IDefuzzifier.cs</Link>
+    </Compile>
+    <Compile Include="..\Fuzzy.WP\FuzzyOutput.cs">
+      <Link>FuzzyOutput.cs</Link>
+    </Compile>
+    <Compile Include="..\Fuzzy.WP\FuzzySet.cs">
+      <Link>FuzzySet.cs</Link>
+    </Compile>
+    <Compile Include="..\Fuzzy.WP\InferenceSystem.cs">
+      <Link>InferenceSystem.cs</Link>
+    </Compile>
+    <Compile Include="..\Fuzzy.WP\LinguisticVariable.cs">
+      <Link>LinguisticVariable.cs</Link>
+    </Compile>
+    <Compile Include="..\Fuzzy.WP\Membership Functions\IMembershipFunction.cs">
+      <Link>Membership Functions\IMembershipFunction.cs</Link>
+    </Compile>
+    <Compile Include="..\Fuzzy.WP\Membership Functions\PiecewiseLinearFunction.cs">
+      <Link>Membership Functions\PiecewiseLinearFunction.cs</Link>
+    </Compile>
+    <Compile Include="..\Fuzzy.WP\Membership Functions\SingletonFunction.cs">
+      <Link>Membership Functions\SingletonFunction.cs</Link>
+    </Compile>
+    <Compile Include="..\Fuzzy.WP\Membership Functions\TrapezoidalFunction.cs">
+      <Link>Membership Functions\TrapezoidalFunction.cs</Link>
+    </Compile>
+    <Compile Include="..\Fuzzy.WP\Operators\ICoNorm.cs">
+      <Link>Operators\ICoNorm.cs</Link>
+    </Compile>
+    <Compile Include="..\Fuzzy.WP\Operators\INorm.cs">
+      <Link>Operators\INorm.cs</Link>
+    </Compile>
+    <Compile Include="..\Fuzzy.WP\Operators\IUnaryOperator.cs">
+      <Link>Operators\IUnaryOperator.cs</Link>
+    </Compile>
+    <Compile Include="..\Fuzzy.WP\Operators\MaximumCoNorm.cs">
+      <Link>Operators\MaximumCoNorm.cs</Link>
+    </Compile>
+    <Compile Include="..\Fuzzy.WP\Operators\MinimumNorm.cs">
+      <Link>Operators\MinimumNorm.cs</Link>
+    </Compile>
+    <Compile Include="..\Fuzzy.WP\Operators\NotOperator.cs">
+      <Link>Operators\NotOperator.cs</Link>
+    </Compile>
+    <Compile Include="..\Fuzzy.WP\Operators\ProductNorm.cs">
+      <Link>Operators\ProductNorm.cs</Link>
+    </Compile>
+    <Compile Include="..\Fuzzy.WP\Rule.cs">
+      <Link>Rule.cs</Link>
+    </Compile>
+    <Compile Include="..\Fuzzy.WP\Rulebase.cs">
+      <Link>Rulebase.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\Fuzzy.WP\AForge.Fuzzy.xml">
+      <Link>AForge.Fuzzy.xml</Link>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core.MT\Core.MT.csproj">
+      <Project>{239661E8-9870-49C9-9925-45222D1B4E0C}</Project>
+      <Name>Core.MT</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties ProjectLinkReference="6c263a8e-854f-45c6-b064-059a60fd11c0" ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

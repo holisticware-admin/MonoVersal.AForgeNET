@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2EFAA327-1789-4438-B9F5-E83ACAE12DB2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AForge.Genetic</RootNamespace>
+    <AssemblyName>AForge.Genetic</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>AForge.Genetic.snk</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>..\..\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>AForge.Genetic.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>..\..\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>AForge.Genetic.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="AForge">
+      <HintPath>..\..\Release\AForge.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Genetic.WP\Chromosomes\BinaryChromosome.cs">
+      <Link>Chromosomes\BinaryChromosome.cs</Link>
+    </Compile>
+    <Compile Include="..\Genetic.WP\Chromosomes\ChromosomeBase.cs">
+      <Link>Chromosomes\ChromosomeBase.cs</Link>
+    </Compile>
+    <Compile Include="..\Genetic.WP\Chromosomes\DoubleArrayChromosome.cs">
+      <Link>Chromosomes\DoubleArrayChromosome.cs</Link>
+    </Compile>
+    <Compile Include="..\Genetic.WP\Chromosomes\GP\ExtendedGeneFunction.cs">
+      <Link>Chromosomes\GP\ExtendedGeneFunction.cs</Link>
+    </Compile>
+    <Compile Include="..\Genetic.WP\Chromosomes\GP\GEPChromosome.cs">
+      <Link>Chromosomes\GP\GEPChromosome.cs</Link>
+    </Compile>
+    <Compile Include="..\Genetic.WP\Chromosomes\GP\GPTreeChromosome.cs">
+      <Link>Chromosomes\GP\GPTreeChromosome.cs</Link>
+    </Compile>
+    <Compile Include="..\Genetic.WP\Chromosomes\GP\GPTreeNode.cs">
+      <Link>Chromosomes\GP\GPTreeNode.cs</Link>
+    </Compile>
+    <Compile Include="..\Genetic.WP\Chromosomes\GP\IGPGene.cs">
+      <Link>Chromosomes\GP\IGPGene.cs</Link>
+    </Compile>
+    <Compile Include="..\Genetic.WP\Chromosomes\GP\SimpleGeneFunction.cs">
+      <Link>Chromosomes\GP\SimpleGeneFunction.cs</Link>
+    </Compile>
+    <Compile Include="..\Genetic.WP\Chromosomes\IChromosome.cs">
+      <Link>Chromosomes\IChromosome.cs</Link>
+    </Compile>
+    <Compile Include="..\Genetic.WP\Chromosomes\PermutationChromosome.cs">
+      <Link>Chromosomes\PermutationChromosome.cs</Link>
+    </Compile>
+    <Compile Include="..\Genetic.WP\Chromosomes\ShortArrayChromosome.cs">
+      <Link>Chromosomes\ShortArrayChromosome.cs</Link>
+    </Compile>
+    <Compile Include="..\Genetic.WP\Fitness Functions\IFitnessFunction.cs">
+      <Link>Fitness Functions\IFitnessFunction.cs</Link>
+    </Compile>
+    <Compile Include="..\Genetic.WP\Fitness Functions\OptimizationFunction1D.cs">
+      <Link>Fitness Functions\OptimizationFunction1D.cs</Link>
+    </Compile>
+    <Compile Include="..\Genetic.WP\Fitness Functions\OptimizationFunction2D.cs">
+      <Link>Fitness Functions\OptimizationFunction2D.cs</Link>
+    </Compile>
+    <Compile Include="..\Genetic.WP\Fitness Functions\SymbolicRegressionFitness.cs">
+      <Link>Fitness Functions\SymbolicRegressionFitness.cs</Link>
+    </Compile>
+    <Compile Include="..\Genetic.WP\Fitness Functions\TimeSeriesPredictionFitness.cs">
+      <Link>Fitness Functions\TimeSeriesPredictionFitness.cs</Link>
+    </Compile>
+    <Compile Include="..\Genetic.WP\Population.cs">
+      <Link>Population.cs</Link>
+    </Compile>
+    <Compile Include="..\Genetic.WP\Selection Algorithms\EliteSelection.cs">
+      <Link>Selection Algorithms\EliteSelection.cs</Link>
+    </Compile>
+    <Compile Include="..\Genetic.WP\Selection Algorithms\ISelectionMethod.cs">
+      <Link>Selection Algorithms\ISelectionMethod.cs</Link>
+    </Compile>
+    <Compile Include="..\Genetic.WP\Selection Algorithms\RankSelection.cs">
+      <Link>Selection Algorithms\RankSelection.cs</Link>
+    </Compile>
+    <Compile Include="..\Genetic.WP\Selection Algorithms\RouletteWheelSelection.cs">
+      <Link>Selection Algorithms\RouletteWheelSelection.cs</Link>
+    </Compile>
+    <Compile Include="Chromosomes\GP\GPTreeNode.ICloneable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AForge.Genetic.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Core.csproj">
+      <Project>{631AC093-430F-45F4-BA0C-AF0F0405918A}</Project>
+      <Name>Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Math\Math.csproj">
+      <Project>{C0FAF524-72E4-46F7-8C1B-A6B74DEC5EBE}</Project>
+      <Name>Math</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties ProjectLinkReference="1e37aa1c-c17c-46a9-a1b6-1697c477a082" ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;\.WP.cs;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

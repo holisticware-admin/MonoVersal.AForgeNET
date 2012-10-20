@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{61C6D89E-D398-4228-BE6C-BD0E31DCC6E0}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AForge.Genetic</RootNamespace>
+    <AssemblyName>AForge.Genetic</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Genetic.WP\Chromosomes\BinaryChromosome.cs">
+      <Link>Chromosomes\BinaryChromosome.cs</Link>
+    </Compile>
+    <Compile Include="..\Genetic.WP\Chromosomes\ChromosomeBase.cs">
+      <Link>Chromosomes\ChromosomeBase.cs</Link>
+    </Compile>
+    <Compile Include="..\Genetic.WP\Chromosomes\DoubleArrayChromosome.cs">
+      <Link>Chromosomes\DoubleArrayChromosome.cs</Link>
+    </Compile>
+    <Compile Include="..\Genetic.WP\Chromosomes\GP\ExtendedGeneFunction.cs">
+      <Link>Chromosomes\GP\ExtendedGeneFunction.cs</Link>
+    </Compile>
+    <Compile Include="..\Genetic.WP\Chromosomes\GP\GEPChromosome.cs">
+      <Link>Chromosomes\GP\GEPChromosome.cs</Link>
+    </Compile>
+    <Compile Include="..\Genetic.WP\Chromosomes\GP\GPTreeChromosome.cs">
+      <Link>Chromosomes\GP\GPTreeChromosome.cs</Link>
+    </Compile>
+    <Compile Include="..\Genetic.WP\Chromosomes\GP\GPTreeNode.cs">
+      <Link>Chromosomes\GP\GPTreeNode.cs</Link>
+    </Compile>
+    <Compile Include="..\Genetic.WP\Chromosomes\GP\GPTreeNode.ICloneable.WP.cs">
+      <Link>Chromosomes\GP\GPTreeNode.ICloneable.WP.cs</Link>
+    </Compile>
+    <Compile Include="..\Genetic.WP\Chromosomes\GP\IGPGene.cs">
+      <Link>Chromosomes\GP\IGPGene.cs</Link>
+    </Compile>
+    <Compile Include="..\Genetic.WP\Chromosomes\GP\SimpleGeneFunction.cs">
+      <Link>Chromosomes\GP\SimpleGeneFunction.cs</Link>
+    </Compile>
+    <Compile Include="..\Genetic.WP\Chromosomes\IChromosome.cs">
+      <Link>Chromosomes\IChromosome.cs</Link>
+    </Compile>
+    <Compile Include="..\Genetic.WP\Chromosomes\PermutationChromosome.cs">
+      <Link>Chromosomes\PermutationChromosome.cs</Link>
+    </Compile>
+    <Compile Include="..\Genetic.WP\Chromosomes\ShortArrayChromosome.cs">
+      <Link>Chromosomes\ShortArrayChromosome.cs</Link>
+    </Compile>
+    <Compile Include="..\Genetic.WP\Fitness Functions\IFitnessFunction.cs">
+      <Link>Fitness Functions\IFitnessFunction.cs</Link>
+    </Compile>
+    <Compile Include="..\Genetic.WP\Fitness Functions\OptimizationFunction1D.cs">
+      <Link>Fitness Functions\OptimizationFunction1D.cs</Link>
+    </Compile>
+    <Compile Include="..\Genetic.WP\Fitness Functions\OptimizationFunction2D.cs">
+      <Link>Fitness Functions\OptimizationFunction2D.cs</Link>
+    </Compile>
+    <Compile Include="..\Genetic.WP\Fitness Functions\SymbolicRegressionFitness.cs">
+      <Link>Fitness Functions\SymbolicRegressionFitness.cs</Link>
+    </Compile>
+    <Compile Include="..\Genetic.WP\Fitness Functions\TimeSeriesPredictionFitness.cs">
+      <Link>Fitness Functions\TimeSeriesPredictionFitness.cs</Link>
+    </Compile>
+    <Compile Include="..\Genetic.WP\Population.cs">
+      <Link>Population.cs</Link>
+    </Compile>
+    <Compile Include="..\Genetic.WP\Selection Algorithms\EliteSelection.cs">
+      <Link>Selection Algorithms\EliteSelection.cs</Link>
+    </Compile>
+    <Compile Include="..\Genetic.WP\Selection Algorithms\ISelectionMethod.cs">
+      <Link>Selection Algorithms\ISelectionMethod.cs</Link>
+    </Compile>
+    <Compile Include="..\Genetic.WP\Selection Algorithms\RankSelection.cs">
+      <Link>Selection Algorithms\RankSelection.cs</Link>
+    </Compile>
+    <Compile Include="..\Genetic.WP\Selection Algorithms\RouletteWheelSelection.cs">
+      <Link>Selection Algorithms\RouletteWheelSelection.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core.MA\Core.MA.csproj">
+      <Project>{B95C8E67-F25F-4C54-A00F-83FA015B7BFF}</Project>
+      <Name>Core.MA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Math.MA\Math.MA.csproj">
+      <Project>{8BF317F5-EC3C-4953-8EA1-76464088B5D5}</Project>
+      <Name>Math.MA</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" ProjectLinkReference="1e37aa1c-c17c-46a9-a1b6-1697c477a082" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6C263A8E-854F-45C6-B064-059A60FD11C0}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AForge.Fuzzy</RootNamespace>
+    <AssemblyName>AForge.Fuzzy</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <TargetFrameworkProfile>WindowsPhone71</TargetFrameworkProfile>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <SilverlightApplication>false</SilverlightApplication>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Net" />
+    <Reference Include="mscorlib.extensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clause.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Defuzzification\CentroidDefuzzifier.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Defuzzification\IDefuzzifier.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FuzzyOutput.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FuzzySet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="InferenceSystem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinguisticVariable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Membership Functions\IMembershipFunction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Membership Functions\PiecewiseLinearFunction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Membership Functions\SingletonFunction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Membership Functions\TrapezoidalFunction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Operators\ICoNorm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Operators\INorm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Operators\IUnaryOperator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Operators\MaximumCoNorm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Operators\MinimumNorm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Operators\NotOperator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Operators\ProductNorm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Rulebase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Core.WP\Core.WP.csproj">
+      <Project>{E543FFCB-8A3C-47B0-B490-C9548779CAF0}</Project>
+      <Name>Core.WP</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AForge.Fuzzy.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <ProjectExtensions />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
